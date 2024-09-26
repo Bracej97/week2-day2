@@ -57,6 +57,18 @@ button:hover {
     background-color: #4cae4c;
 }
 
+.email-label::before {
+    content: "✉️";
+    position: relative;
+    padding-right: 5px;
+}
+
+.phone-label::before {
+    content: "📞";
+    position: relative;
+    padding-right: 5px;
+}
+
 /* Pseudo-elements for Email and Phone Labels */
 /* Add ✉️ and 📞 icons before the labels */
 
@@ -69,3 +81,17 @@ button:hover {
 }
 
 /* Add hover and visited states for the link */
+
+.terms-link:hover {
+    color:#4cae4c;
+    font-size: 40px;
+    cursor: wait;
+}
+
+.terms-link:visited {
+    color: grey;
+}
+
+button:hover {
+    background-color: pink;
+}
