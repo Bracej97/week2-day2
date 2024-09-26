@@ -64,8 +64,40 @@ img {
     padding: 20px;
     margin: 20px;
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.062);
+    box-shadow: 0px 0px 5px 5px #dddddd50;
     /* Old styling */
-   
+
     /* Add New styling here */
+}
+
+
+
+.product:hover{
+    animation: pulse 2s infinite;
+}
+
+img:hover {
+    transition-duration: 2s;
+    transform: rotate(720deg);
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+    transition-duration: 2s;
+    animation: pulse 0.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5) rotate(180deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
 }
